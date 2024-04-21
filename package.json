@@ -1,0 +1,39 @@
+{
+    "name": "node-template",
+    "description": "Base template for Node projects",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js",
+        "lint": "eslint src/**/*.js",
+        "lint-fix": "eslint src/**/*.js --fix",
+        "format": "prettier --write \"src/**/*.js\"",
+        "format-all": "prettier --write .",
+        "prepare": "husky"
+    },
+    "author": {
+        "name": "clozerdev",
+        "email": "alvarogonzaloprieto@gmail.com",
+        "url": "https://clozer.dev"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/eslintrc": "3.0.2",
+        "@eslint/js": "9.1.1",
+        "eslint": "9.1.0",
+        "eslint-config-prettier": "9.1.0",
+        "eslint-config-standard": "17.1.0",
+        "eslint-plugin-import": "2.29.1",
+        "eslint-plugin-n": "17.2.1",
+        "eslint-plugin-promise": "6.1.1",
+        "globals": "15.0.0",
+        "husky": "9.0.11",
+        "lint-staged": "15.2.2",
+        "nodemon": "3.1.0",
+        "prettier": "3.2.5"
+    },
+    "imports": {
+        "#lib/*": "./src/lib/*"
+    }
+}

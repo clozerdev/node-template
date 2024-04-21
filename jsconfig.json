@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "Node16",
+        "baseUrl": "./",
+        "paths": {
+            "#lib/*": ["./src/lib/*"]
+        }
+    },
+    "exclude": ["node_modules"]
+}
